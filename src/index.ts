@@ -1,3 +1,1 @@
-const a = 'hola'
-
-console.log(a)
+export * from './finance'

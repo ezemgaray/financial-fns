@@ -1,7 +1,7 @@
 {
-	"name": "ts-package-template",
+	"name": "financial-fns",
 	"version": "0.0.0",
-	"description": "",
+	"description": "Library with financial functions, useful calculations and constants",
 	"main": "dist/index.js",
 	"scripts": {
 		"test": "jest",
@@ -12,15 +12,15 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/ezemgaray/ts-package-template.git"
+		"url": "git+https://github.com/ezemgaray/financial-fns.git"
 	},
 	"keywords": [],
 	"author": "",
 	"license": "ISC",
 	"bugs": {
-		"url": "https://github.com/ezemgaray/ts-package-template/issues"
+		"url": "https://github.com/ezemgaray/financial-fns/issues"
 	},
-	"homepage": "https://github.com/ezemgaray/ts-package-template#readme",
+	"homepage": "https://github.com/ezemgaray/financial-fns#readme",
 	"devDependencies": {
 		"@types/jest": "^29.2.3",
 		"@typescript-eslint/eslint-plugin": "^5.45.0",

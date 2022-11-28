@@ -1,13 +1,13 @@
 <div align="center">
 
-# ts-package-template
+# financial-fns
 
-Generate a folder tree structure using command line or code.
+Library with financial functions, useful calculations and constants
 
-[![NPM version](https://badgen.net/npm/v/ts-package-template)](https://npmjs.com/package/ts-package-template)
-[![NPM downloads](https://badgen.net/npm/dw/ts-package-template)](https://npmjs.com/package/ts-package-template)
-[![Open issues](https://badgen.net//github/open-issues/ezemgaray/ts-package-template)](https://github.com/ezemgaray/ts-package-template/issues)
-[![Open prs](https://badgen.net//github/open-prs/ezemgaray/ts-package-template)](https://github.com/ezemgaray/ts-package-template/pulls)
+[![NPM version](https://badgen.net/npm/v/financial-fns)](https://npmjs.com/package/financial-fns)
+[![NPM downloads](https://badgen.net/npm/dw/financial-fns)](https://npmjs.com/package/financial-fns)
+[![Open issues](https://badgen.net//github/open-issues/ezemgaray/financial-fns)](https://github.com/ezemgaray/financial-fns/issues)
+[![Open prs](https://badgen.net//github/open-prs/ezemgaray/financial-fns)](https://github.com/ezemgaray/financial-fns/pulls)
 
 </div>
 

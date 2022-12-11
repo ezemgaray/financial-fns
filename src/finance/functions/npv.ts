@@ -2,6 +2,7 @@ import Decimal from 'decimal.js'
 import { CashFlow } from '../constants'
 
 /**
+ * Calculate NPV (Spanish: VNA )
  * Calculates the net present value of an investment by using a discount rate
  * and a series of future payments (negative values) and income (positive values).
  * - Reference: [Microsoft Support - NPV Function](https://support.microsoft.com/en-us/office/npv-function-8672cb67-2576-4d07-b67b-ac28acf2a568)

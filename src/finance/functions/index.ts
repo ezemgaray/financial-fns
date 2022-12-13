@@ -1,4 +1,8 @@
+export { dayCountByDate } from './dayCountByDate'
+export { dayCountByDateTime } from './dayCountByDateTime'
 export { getDaysFrequency } from './getDaysByFrequency'
 export { irr } from './irr'
 export { npv } from './npv'
 export { round } from './round'
+export { xirr } from './xirr'
+export { xnpv } from './xnpv'

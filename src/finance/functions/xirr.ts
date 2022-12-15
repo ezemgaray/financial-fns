@@ -6,7 +6,10 @@ import { xnpv } from './xnpv'
 /**
  * ### Internal Rate of Return (IRR) for a series of cash flows.
  *
- * Calculate XIRR (Spanish: TIR.NO.PER )
+ * **Excel**:
+ * - =XIRR (English)
+ * - =TIR.NO.PER (Spanish)
+ *
  * Returns the internal rate of return for a schedule of cash flows that
  * is not necessarily periodic. To calculate the internal rate of return
  * for a series of periodic cash flows, use the IRR function.

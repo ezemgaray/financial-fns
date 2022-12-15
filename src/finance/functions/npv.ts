@@ -4,7 +4,10 @@ import { CashFlow } from '../constants'
 /**
  * ### Net Present Value (NPV)
  *
- * Calculate NPV (Spanish: VNA )
+ * **Excel**:
+ * - =NPV (English)
+ * - =VNA (Spanish)
+ *
  * Calculates the net present value of an investment by using a discount rate
  * and a series of future payments (negative values) and income (positive values).
  * - Reference: [Microsoft Support - NPV Function](https://support.microsoft.com/en-us/office/npv-function-8672cb67-2576-4d07-b67b-ac28acf2a568)

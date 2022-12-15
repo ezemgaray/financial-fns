@@ -4,7 +4,10 @@ import { dayCountByDate } from './dayCountByDate'
 
 /**
  * ### Net Present Value (NPV) Schedule for a schedule of cash flows
- * Calculate XNPV (Spanish: VNA.NO.PER )
+ *
+ * **Excel**:
+ * - =XNPV (English)
+ * - =VNA.NO.PER (Spanish)
  *
  * Returns the net present value for a schedule of cash flows that is not necessarily periodic.
  * To calculate the net present value for a series of cash flows that is periodic, use the NPV function.

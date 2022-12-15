@@ -5,7 +5,9 @@ import { npv } from './npv'
 /**
  * ### Internal Rate of Return (IRR)
  *
- * Calculate IRR (Spanish: TIR )
+ * **Excel**:
+ * - =IRR (English)
+ * - =TIR (Spanish)
  *
  * Returns the internal rate of return for a series of cash flows represented by the numbers in values.
  * These cash flows do not have to be even, as they would be for an annuity.

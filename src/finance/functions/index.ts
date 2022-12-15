@@ -1,5 +1,7 @@
 export { dayCountByDate } from './dayCountByDate'
 export { dayCountByDateTime } from './dayCountByDateTime'
+export { fv } from './fv'
+export { fvSchedule } from './fvSchedule'
 export { getDaysFrequency } from './getDaysByFrequency'
 export { irr } from './irr'
 export { npv } from './npv'

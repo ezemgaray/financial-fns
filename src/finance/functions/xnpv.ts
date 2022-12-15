@@ -3,6 +3,7 @@ import { CashFlow, NATURAL_YEAR_IN_DAYS } from '../constants'
 import { dayCountByDate } from './dayCountByDate'
 
 /**
+ * ### Net Present Value (NPV) Schedule for a schedule of cash flows
  * Calculate XNPV (Spanish: VNA.NO.PER )
  *
  * Returns the net present value for a schedule of cash flows that is not necessarily periodic.
@@ -18,8 +19,9 @@ import { dayCountByDate } from './dayCountByDate'
  * ```ts
  *
  * const cashflow = [ -112, 44.05, 41.81, 39.57 ]
- * const NPV_FinancialFns = npv(cashFlow) // 13.43
- * const NPV_Excel = 13.43 // =NPV(0;range)
+ * const dates = [ new Date('2008-01-01'), new Date('2008-03-01'), new Date('2008-10-30'), new Date('2009-02-15') ]
+ * const NPV_FinancialFns = xnpv(cashFlow, dates) // 5.537900675836245
+ * const NPV_Excel = 5.53790067583623 // =NPV(0,1;cashFlow;dates)
  * ```
  */
 export const xnpv = (cashFlow: CashFlow, dates: Date[], rate: number = 0) => {

@@ -22,13 +22,13 @@ describe('IRR', () => {
 	it('Must be NaN', () => {
 		expect(irr([-112, 44.05, 41.81, -39000.57])).toEqual(NaN)
 	})
-	it('Must be CloseTo 0.0599562 (excel)', () => {
+	it('Must be close to 0.0599562 (excel)', () => {
 		expect(irr([-112, 44.05, 41.81, 39.57])).toBeCloseTo(0.0599562, 5)
 	})
-	it('Must be CloseTo 0.0599562 (excel) - adding guess=0.5', () => {
+	it('Must be close to 0.0599562 (excel) - adding guess=0.5', () => {
 		expect(irr([-112, 44.05, 41.81, 39.57], 0.5)).toBeCloseTo(0.0599562, 5)
 	})
-	it('Must be CloseTo 0.0817018 (excel)', () => {
+	it('Must be close to 0.0817018 (excel)', () => {
 		expect(
 			irr([
 				-1333.11, 178.46, 178.46, 178.46, 178.46, 178.46, 178.46, 178.46,
@@ -36,10 +36,10 @@ describe('IRR', () => {
 			])
 		).toBeCloseTo(0.0817018, 5)
 	})
-	it('Must be CloseTo 0.0562908 (excel)', () => {
+	it('Must be close to 0.0562908 (excel)', () => {
 		expect(irr([-420.94, 164.01, 156.11, 148.21])).toBeCloseTo(0.0562908, 5)
 	})
-	it('Must be CloseTo -0.0854988 (excel)', () => {
+	it('Must be close to -0.0854988 (excel)', () => {
 		expect(irr([-375, 200, 0, 160, -37])).toBeCloseTo(-0.0854988, 5)
 	})
 })

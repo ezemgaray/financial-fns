@@ -4,6 +4,8 @@ import { dayCountByDate } from './dayCountByDate'
 import { xnpv } from './xnpv'
 
 /**
+ * ### Internal Rate of Return (IRR) for a series of cash flows.
+ *
  * Calculate XIRR (Spanish: TIR.NO.PER )
  * Returns the internal rate of return for a schedule of cash flows that
  * is not necessarily periodic. To calculate the internal rate of return
@@ -90,27 +92,3 @@ export const xirr = (
 
 	return rate.toNumber()
 }
-
-// console.log(
-// 	xirr(
-// 		[-10000, 2750, 4250, 3250, 2750],
-// 		[
-// 			new Date('2008-01-01'),
-// 			new Date('2008-03-01'),
-// 			new Date('2008-10-30'),
-// 			new Date('2009-02-15'),
-// 			new Date('2009-04-01'),
-// 		]
-// 	)
-// )
-// console.log(
-// 	xirr(
-// 		[-112, 44.05, 41.81, 39.57],
-// 		[
-// 			new Date('2022-12-11'),
-// 			new Date('2022-12-26'),
-// 			new Date('2023-01-10'),
-// 			new Date('2023-01-25'),
-// 		]
-// 	)
-// )

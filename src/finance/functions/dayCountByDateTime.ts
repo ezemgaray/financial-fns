@@ -7,6 +7,8 @@ import { round } from './round'
  * @param to
  * @param abs
  * @returns
+ * @example
+ * Return 3.15 (days)
  */
 export const dayCountByDateTime = (
 	from: Date,

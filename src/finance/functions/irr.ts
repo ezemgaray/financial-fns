@@ -3,6 +3,8 @@ import { CashFlow } from '../constants'
 import { npv } from './npv'
 
 /**
+ * ### Internal Rate of Return (IRR)
+ *
  * Calculate IRR (Spanish: TIR )
  *
  * Returns the internal rate of return for a series of cash flows represented by the numbers in values.

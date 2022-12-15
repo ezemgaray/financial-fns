@@ -1,6 +1,12 @@
 import Decimal from 'decimal.js'
 import { round } from './round'
-
+/**
+ * Count days between two dates without time
+ * @param from
+ * @param to
+ * @param abs
+ * @returns integer
+ */
 export const dayCountByDate = (
 	from: Date,
 	to: Date,

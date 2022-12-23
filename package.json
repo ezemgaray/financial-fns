@@ -3,12 +3,14 @@
 	"version": "0.0.0",
 	"description": "Library with financial functions, useful calculations and constants",
 	"main": "dist/index.js",
+	"module": "dist/financial-fns.esm.js",
+	"types": "dist/index.d.ts",
 	"scripts": {
 		"prepare": "husky install",
 		"test": "jest",
 		"test:watch": "jest --watch",
 		"changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
-		"build": "rimraf dist && tsc",
+		"build": "tsdx build",
 		"prepublish": "npm run build",
 		"release:patch": "npm run release -- --release-as patch",
 		"release:minor": "npm run release -- --release-as minor",
@@ -36,6 +38,8 @@
 		"rimraf": "^3.0.2",
 		"standard-version": "^9.5.0",
 		"ts-jest": "^29.0.3",
+		"tsdx": "^0.14.1",
+		"tslib": "^2.4.1",
 		"typescript": "^4.9.3"
 	},
 	"dependencies": {

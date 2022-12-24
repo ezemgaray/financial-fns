@@ -1,5 +1,6 @@
 export { dayCountByDate } from './dayCountByDate'
 export { dayCountByDateTime } from './dayCountByDateTime'
+export { effect } from './effect'
 export { fv } from './fv'
 export { fvSchedule } from './fvSchedule'
 export { getDaysFrequency } from './getDaysByFrequency'

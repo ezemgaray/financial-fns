@@ -6,6 +6,6 @@ import Decimal from 'decimal.js'
  * @param places
  * @returns
  */
-export function round(num: number, places: number = 2): number {
+export const round = (num: number, places: number = 2): number => {
 	return new Decimal(num).toDecimalPlaces(places).toNumber()
 }

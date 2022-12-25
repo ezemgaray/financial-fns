@@ -31,7 +31,7 @@ import { npv } from './npv'
  *
  * ```
  */
-export function irr(cashFlow: CashFlow, guess: number = 0.1): number {
+export const irr = (cashFlow: CashFlow, guess: number = 0.1): number => {
 	// check at least 2 values
 	if (cashFlow.length < 2) {
 		throw Error(

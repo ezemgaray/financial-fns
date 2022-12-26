@@ -16,7 +16,7 @@ describe('getDaysInFrequency', () => {
 		expect(getDaysFrequency(frequency)).toEqual(15)
 	})
 	it('Should be 30 days - monthly', () => {
-		const frequency = 28
+		const frequency = 1
 		expect(getDaysFrequency(frequency)).toEqual(30)
 	})
 	it('Should be 60 days - every two months', () => {

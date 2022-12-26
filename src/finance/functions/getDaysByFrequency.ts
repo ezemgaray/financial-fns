@@ -1,13 +1,13 @@
-import { Frequency } from '../constants'
+import { Frequency } from './constants'
 
 /**
- *
+ * Get total days in a frequency
  * @param frequency
  * @returns
  * @example
  * weekly: 7,
  * biWeekly: 14,
- * monthly: 28,
+ * monthly: 1,
  * everyTwoMonths: 2,
  * everyThreeMonths: 3,
  * everyFourMonths: 4,
@@ -20,8 +20,7 @@ export const getDaysFrequency = (frequency: Frequency): number => {
 			return frequency
 		case 14:
 			return 15
-		case 28:
-			return 30
+		case 1:
 		case 2:
 		case 3:
 		case 4:

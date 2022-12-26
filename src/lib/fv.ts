@@ -14,14 +14,14 @@ import Decimal from 'decimal.js'
  * @param totalPeriods The total number of payment periods
  * @param payment Payment for each period. It cannot change between periods.
  * @param presentValue default 0 - The present value, or the lump-sum amount that a series of future payments is worth right now
- * @param dueDateType false (default) = At the end of the period | true = At the beginning of the period.
+ * @param dueDateType 0 (default) = At the end of the period | true = At the beginning of the period.
  */
 export const fv = (
 	rate: number,
 	totalPeriods: number,
 	payment: number,
 	presentValue: number = 0,
-	dueDateType: boolean = false
+	dueDateType: number = 0
 ) => {
 	if (rate === 0) return -(presentValue + payment * totalPeriods)
 	const rateDecimal = new Decimal(rate)

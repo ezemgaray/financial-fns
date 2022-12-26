@@ -1,5 +1,5 @@
 import Decimal from 'decimal.js'
-import { CashFlow, NATURAL_YEAR_IN_DAYS } from '../constants'
+import { CashFlow, NATURAL_YEAR_IN_DAYS } from './constants'
 import { dayCountByDate } from './dayCountByDate'
 import { xnpv } from './xnpv'
 

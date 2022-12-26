@@ -99,9 +99,7 @@ export const rate = (
 	let i = 0
 	while (i < iterMax) {
 		if (y1.eq(y0)) {
-			rateD = rateD.lessThan(rate1D)
-				? rateD.minus(step)
-				: rateD.minus(step * -1)
+			rateD = rateD.minus(step * -1)
 			y0 = evalRate(
 				rateD,
 				nPeriods,

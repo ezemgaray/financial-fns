@@ -1,4 +1,4 @@
-import { LastDateOfMonth } from './constants'
+import { LastDateOfMonth } from '../types'
 
 /**
  * Get last date of mont.

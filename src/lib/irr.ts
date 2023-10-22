@@ -1,5 +1,5 @@
 import Decimal from 'decimal.js'
-import { CashFlow } from './constants'
+import { CashFlow } from '../types'
 import { npv } from './npv'
 
 /**

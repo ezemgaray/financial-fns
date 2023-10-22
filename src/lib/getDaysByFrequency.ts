@@ -1,4 +1,4 @@
-import { Frequency } from './constants'
+import { Frequency } from '../types'
 
 /**
  * Get total days in a frequency

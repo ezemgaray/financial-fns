@@ -25,16 +25,16 @@ import Decimal from 'decimal.js'
  */
 export const fvSchedule = (principal: number, schedule: number[]) => {
 	if (!Array.isArray(schedule) || !schedule.length) {
-		throw new Error('Schedule must be an array of numbers')
+		// Schedule must be an array of numbers
+		return NaN
 	}
 
-	return schedule
-		.reduce((acc, rate): Decimal => {
-			if (typeof rate !== 'number') {
-				throw new Error('Rate must be a number')
-			}
-
-			return acc.mul(1 + rate)
-		}, new Decimal(principal))
-		.toNumber()
+	let futureValue = new Decimal(principal)
+	for (let i = 0; i < schedule.length; i++) {
+		if (isNaN(schedule[i])) {
+			return NaN
+		}
+		futureValue = futureValue.mul(1 + schedule[i])
+	}
+	return futureValue.toNumber()
 }

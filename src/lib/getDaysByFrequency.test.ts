@@ -1,11 +1,9 @@
 import { getDaysFrequency } from './getDaysByFrequency'
 
 describe('getDaysInFrequency', () => {
-	it('Should throw error "Incorrect frequency."', () => {
+	it('Should be NaN - "Incorrect frequency."', () => {
 		const frequency = 9
-		expect(() => getDaysFrequency(<any>frequency)).toThrow(
-			'Incorrect frequency.'
-		)
+		expect(getDaysFrequency(<any>frequency)).toBe(NaN)
 	})
 	it('Should be 7 days - weekly', () => {
 		const frequency = 7

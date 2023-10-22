@@ -1,20 +1,14 @@
 import { irr } from './irr'
 
 describe('IRR', () => {
-	it('Should throw error "There must be at least two values (1 negative and 1 positive number)."', () => {
-		expect(() => irr([-112])).toThrow(
-			'There must be at least two values (1 negative and 1 positive number).'
-		)
+	it('Should be NaN - "There must be at least two values (1 negative and 1 positive number)."', () => {
+		expect(irr([-112])).toBe(NaN)
 	})
-	it('Should throw error "The first value must be a negative number."', () => {
-		expect(() => irr([112, 44.05, 41.81, 39.57])).toThrow(
-			'The first value must be a negative number.'
-		)
+	it('Should be NaN - "The first value must be a negative number."', () => {
+		expect(irr([112, 44.05, 41.81, 39.57])).toBe(NaN)
 	})
-	it('Should throw error "At least one transaction must be a positive number."', () => {
-		expect(() => irr([-112, -44.05, -41.81, -39.57])).toThrow(
-			'At least one transaction must be a positive number.'
-		)
+	it('Should be NaN - "At least one transaction must be a positive number."', () => {
+		expect(irr([-112, -44.05, -41.81, -39.57])).toBe(NaN)
 	})
 	it('Must be NaN', () => {
 		expect(irr([-1120, 44.05, 41.81, 39.57])).toEqual(NaN)
@@ -31,8 +25,19 @@ describe('IRR', () => {
 	it('Must be close to 0.0817018 (excel)', () => {
 		expect(
 			irr([
-				-1333.11, 178.46, 178.46, 178.46, 178.46, 178.46, 178.46, 178.46,
-				178.46, 178.46, 178.46, 178.46, 178.46,
+				-1333.11,
+				178.46,
+				178.46,
+				178.46,
+				178.46,
+				178.46,
+				178.46,
+				178.46,
+				178.46,
+				178.46,
+				178.46,
+				178.46,
+				178.46
 			])
 		).toBeCloseTo(0.0817018, 5)
 	})

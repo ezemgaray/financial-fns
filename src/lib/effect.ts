@@ -15,12 +15,12 @@ import Decimal from 'decimal.js'
  */
 export const effect = (rate: number, nPeriods: number) => {
 	if (isNaN(rate) || rate <= 0) {
-		throw new Error('The rate must be a number greater than 0')
+		// 'The rate must be a number greater than 0'
+		return NaN
 	}
 	if (isNaN(nPeriods) || nPeriods < 1) {
-		throw new Error(
-			'The number of periods must be a number greater or equal than 1'
-		)
+		// The number of periods must be a number greater or equal than 1
+		return NaN
 	}
 
 	return new Decimal(new Decimal(rate).div(nPeriods).add(1))

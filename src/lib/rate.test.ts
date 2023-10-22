@@ -1,20 +1,14 @@
 import { rate } from './rate'
 
 describe('rate', () => {
-	it('Should throw error "Periods must be a number greater or equal than 1"', () => {
-		expect(() => rate(0 * 12, -200, 8000)).toThrow(
-			'Periods must be a number greater or equal than 1'
-		)
+	it('Should be NaN "Periods must be a number greater or equal than 1"', () => {
+		expect(rate(0 * 12, -200, 8000)).toBe(NaN)
 	})
-	it('Should throw error "For payment and present value, at least one of these must be negative and the other positive."', () => {
-		expect(() => rate(4 * 12, 200, 8000)).toThrow(
-			'For payment and present value, at least one of these must be negative and the other positive.'
-		)
+	it('Should be NaN "For payment and present value, at least one of these must be negative and the other positive."', () => {
+		expect(rate(4 * 12, 200, 8000)).toBe(NaN)
 	})
-	it('Should throw error "For payment and present value, at least one of these must be negative and the other positive."', () => {
-		expect(() => rate(4 * 12, -200, -8000)).toThrow(
-			'For payment and present value, at least one of these must be negative and the other positive.'
-		)
+	it('Should be NaN "For payment and present value, at least one of these must be negative and the other positive."', () => {
+		expect(rate(4 * 12, -200, -8000)).toBe(NaN)
 	})
 	it('Should be NaN for Max iterations exceeded. Rate not found.', () => {
 		expect(rate(4 * 12, -200, 8000, 0, 0, 200)).toBeNaN()

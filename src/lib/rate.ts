@@ -33,12 +33,12 @@ export const rate = (
 	guess: number = 0.1
 ): number => {
 	if (nPeriods < 1) {
-		throw new Error('Periods must be a number greater or equal than 1.')
+		// Periods must be a number greater or equal than 1.
+		return NaN
 	}
 	if (payment > 0 === presentValue > 0) {
-		throw new Error(
-			'For payment and present value, at least one of these must be negative and the other positive.'
-		)
+		// For payment and present value, at least one of these must be negative and the other positive.
+		return NaN
 	}
 	// Set maximum epsilon for end of iteration
 	const epsMax = 1e-7

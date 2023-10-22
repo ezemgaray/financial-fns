@@ -24,7 +24,8 @@ export const nper = (
 	dueDateType: number = 0
 ) => {
 	if (payment === 0) {
-		throw new Error('Payment cannot be 0')
+		// Payment cannot be 0
+		return NaN
 	}
 
 	const presentValueD = new Decimal(presentValue)
@@ -55,7 +56,8 @@ export const nper = (
 		futureValueTemp.lessThanOrEqualTo(0) ||
 		presentValueTemp.lessThanOrEqualTo(0)
 	) {
-		throw new Error('Cannot Calculate NPER')
+		//Cannot Calculate NPER
+		return NaN
 	}
 
 	return futureValueTemp

@@ -28,6 +28,7 @@ export const getDaysFrequency = (frequency: Frequency): number => {
 		case 12:
 			return frequency * 30
 		default:
-			throw new Error('Incorrect frequency.')
+			// Incorrect frequency
+			return NaN
 	}
 }

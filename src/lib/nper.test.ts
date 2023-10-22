@@ -1,11 +1,11 @@
 import { nper } from './nper'
 
 describe('nper', () => {
-	it('Should throw error "Payment cannot be 0"', () => {
-		expect(() => nper(0, 0, -25000)).toThrow('Payment cannot be 0')
+	it('Should be NaN - "Payment cannot be 0"', () => {
+		expect(nper(0, 0, -25000)).toBe(NaN)
 	})
-	it('Should throw error "Cannot Calculate NPER"', () => {
-		expect(() => nper(0.1, 0.1, -1500)).toThrow('Cannot Calculate NPER')
+	it('Should be NaN - "Cannot Calculate NPER"', () => {
+		expect(nper(0.1, 0.1, -1500)).toBe(NaN)
 	})
 	it('Should return 50 periods with rate as 0 (Excel)', () => {
 		expect(nper(0, 500, -25000)).toEqual(50)

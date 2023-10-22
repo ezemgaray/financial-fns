@@ -27,20 +27,22 @@ export const xirr = (
 ) => {
 	// check at least 2 values
 	if (cashFlow.length < 2) {
-		throw Error(
-			'There must be at least two values (1 negative and 1 positive number).'
-		)
+		// There must be at least two values (1 negative and 1 positive number).
+		return NaN
 	}
 	// check for investment
 	if (cashFlow[0] >= 0) {
-		throw Error('The first value must be a negative number.')
+		// The first value must be a negative number.
+		return NaN
 	}
 
 	if (!cashFlow.find(transaction => transaction > 0)) {
-		throw Error('At least one transaction must be a positive number.')
+		// At least one transaction must be a positive number.
+		return NaN
 	}
 	if (cashFlow.length != dates.length) {
-		throw Error('The total dates must coincide with the cash flow.')
+		// The total dates must coincide with the cash flow.
+		return NaN
 	}
 
 	const precision: number = 1e-10

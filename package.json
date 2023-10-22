@@ -1,6 +1,6 @@
 {
 	"name": "financial-fns",
-	"version": "0.0.0",
+	"version": "0.0.1",
 	"type": "module",
 	"description": "Library with financial functions, useful calculations and constants",
 	"main": "dist/index.js",

@@ -1,1 +1,2 @@
-export * from './lib'
+const financialFns = require('./lib')
+module.exports = financialFns

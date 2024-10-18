@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.3](https://github.com/ezemgaray/financial-fns/compare/v0.0.2...v0.0.3) (2024-10-18)
+
+
+### Bug Fixes
+
+* Remove package.json type ([e1f22de](https://github.com/ezemgaray/financial-fns/commit/e1f22def59fd7010b62a3b975aa1aee96f59e957))
+
 ### [0.0.2](https://github.com/ezemgaray/financial-fns/compare/v0.0.1...v0.0.2) (2023-10-22)
 
 ### 0.0.1 (2023-10-22)

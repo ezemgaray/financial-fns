@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.4](https://github.com/ezemgaray/financial-fns/compare/v0.0.3...v0.0.4) (2024-10-18)
+
+
+### Bug Fixes
+
+* package.json and ts-config ([358f1f6](https://github.com/ezemgaray/financial-fns/commit/358f1f6287c3d1b01af7b0e7bf59d3aab1f6d6ad))
+
 ### [0.0.3](https://github.com/ezemgaray/financial-fns/compare/v0.0.2...v0.0.3) (2024-10-18)
 
 

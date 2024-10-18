@@ -1,7 +1,8 @@
 {
 	"compilerOptions": {
-		"module": "ESNext", 
-		"lib": ["ESNext"] ,
+		"target": "ESNext",
+		"module": "ESNext",
+		"lib": ["ESNext"],
 		"declaration": true,
 		"sourceMap": true,
 		"outDir": "dist",

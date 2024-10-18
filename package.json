@@ -5,6 +5,13 @@
 	"main": "dist/index.js",
 	"module": "dist/financial-fns.esm.js",
 	"types": "dist/index.d.ts",
+	"exports": {
+		".": {
+			"require": "./dist/index.js",
+			"import": "./dist/financial-fns.esm.js",
+			"types": "./dist/index.d.ts"
+		}
+	},
 	"scripts": {
 		"prepare": "husky install",
 		"test": "jest",

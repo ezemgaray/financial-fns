@@ -1,7 +1,7 @@
 import { LastDateOfMonth } from '../types'
 
 /**
- * Get last date of mont.
+ * Get last date of month.
  * This function needs the year to correctly return the last date of February.
  * @param month 0 to 11
  * @param year 4 digits - e.g 2022

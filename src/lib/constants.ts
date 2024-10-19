@@ -1,5 +1,5 @@
 export const FINANCIAL_YEAR_IN_MONTHS = 12
-export const FINANCIAL_YEAN_IN_WEEKS = 52
+export const FINANCIAL_YEAR_IN_WEEKS = 52
 export const FINANCIAL_YEAR_IN_DAYS = 360
 export const FINANCIAL_MONTH_IN_DAYS = 30
 export const NATURAL_YEAR_IN_DAYS = 365

@@ -14,7 +14,7 @@ import { Frequency } from '../types'
  * everySixMonths: 6,
  * yearly: 12,
  */
-export const getDaysFrequency = (frequency: Frequency): number => {
+export const getDaysByFrequency = (frequency: Frequency): number => {
 	switch (frequency) {
 		case 7:
 			return frequency

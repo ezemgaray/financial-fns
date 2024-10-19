@@ -28,8 +28,31 @@
 		"type": "git",
 		"url": "git+https://github.com/ezemgaray/financial-fns.git"
 	},
-	"keywords": [],
-	"author": "",
+	"keywords": [
+		"Finance",
+		"Financial",
+		"Calculation",
+		"Money",
+		"CashFlow",
+		"Accounting",
+		"Interest",
+		"Loan",
+		"Excel",
+		"Functions",
+		"XIRR",
+		"IRR",
+		"NPV",
+		"XNPV",
+		"FV",
+		"FVSCHEDULE",
+		"NPER",
+		"EFFECT"
+	],
+	"author": {
+		"name": "Ezequiel Garay",
+		"email": "ezemgaray@gmail.com",
+		"url": "https://github.com/ezemgaray"
+	},
 	"license": "ISC",
 	"bugs": {
 		"url": "https://github.com/ezemgaray/financial-fns/issues"

@@ -1,6 +1,6 @@
 {
 	"name": "financial-fns",
-	"version": "0.0.7",
+	"version": "0.0.8",
 	"description": "Library with financial functions, useful calculations and constants",
 	"main": "dist/index.js",
 	"module": "dist/financial-fns.esm.js",

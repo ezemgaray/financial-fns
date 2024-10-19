@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.8](https://github.com/ezemgaray/financial-fns/compare/v0.0.7...v0.0.8) (2024-10-19)
+
+
+### Chore
+
+* compilerOptions - keep comments ([3a6b932](https://github.com/ezemgaray/financial-fns/commit/3a6b93290a9d9b6c4bc4978d0433e979f8543ec3))
+* misspellings ([96bc82c](https://github.com/ezemgaray/financial-fns/commit/96bc82c0f30335645985d702c73cfc0181061383))
+* package.json - Add keywords ([24ba392](https://github.com/ezemgaray/financial-fns/commit/24ba39208bc3580aee1eeba9513677ec0dab112d))
+* update README ([71addca](https://github.com/ezemgaray/financial-fns/commit/71addcab4fc7f8821007b676b9356b0b5ef39831))
+
 ### [0.0.7](https://github.com/ezemgaray/financial-fns/compare/v0.0.6...v0.0.7) (2024-10-18)
 
 ### [0.0.6](https://github.com/ezemgaray/financial-fns/compare/v0.0.5...v0.0.6) (2024-10-18)

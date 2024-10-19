@@ -7,7 +7,7 @@
 		"sourceMap": true,
 		"outDir": "dist",
 		"rootDir": "src",
-		"removeComments": true,
+		"removeComments": false,
 		"importHelpers": true,
 		"strict": true,
 		"esModuleInterop": true,
